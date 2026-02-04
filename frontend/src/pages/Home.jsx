@@ -107,10 +107,10 @@ function Home() {
       </div>
 
       <div className="action-bar">
-        <Link to="/settings" className="btn btn-secondary">
+        <Link to="/lector-codigos/settings" className="btn btn-secondary">
           Configuración
         </Link>
-        <Link to="/sync" className="btn btn-secondary">
+        <Link to="/lector-codigos/sync" className="btn btn-secondary">
           Sincronizar
         </Link>
       </div>
