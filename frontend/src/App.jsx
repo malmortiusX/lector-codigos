@@ -23,11 +23,11 @@ function App() {
       <main className="main-content">
         <Suspense fallback={<div className="loading">Cargando...</div>}>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/inventory/:id" element={<NewInventory />} />
-            <Route path="/inventory/new" element={<NewInventory />} />
-            <Route path="/settings" element={<Settings />} />
-            <Route path="/sync" element={<SyncProducts />} />
+            <Route path="/lector-codigos/" element={<Home />} />
+            <Route path="/lector-codigos/inventory/:id" element={<NewInventory />} />
+            <Route path="/lector-codigos/inventory/new" element={<NewInventory />} />
+            <Route path="/lector-codigos/settings" element={<Settings />} />
+            <Route path="/lector-codigos/sync" element={<SyncProducts />} />
           </Routes>
         </Suspense>
       </main>
