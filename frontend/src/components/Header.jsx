@@ -23,13 +23,13 @@ function Header() {
     }
   }
 
-  const showBackButton = location.pathname !== '/'
+  const showBackButton = location.pathname !== '/lector-codigos/'
 
   return (
     <header className="header">
       <div className="header-left">
         {showBackButton && (
-          <Link to="/" className="btn-back">
+          <Link to="/lector-codigos/" className="btn-back">
             ← Volver
           </Link>
         )}
