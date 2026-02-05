@@ -119,11 +119,11 @@ export function useBarcode(inventoryId, onScan) {
 
     // Los lectores láser envían el código completo seguido de Enter o Tab
     // También podemos detectar por longitud (39 caracteres)
-    if (value.length >= 39) {
-      processingTimeout.current = setTimeout(() => {
-        processBarcode(value)
-      }, 100)
-    }
+    // if (value.length >= 39) {
+    //   processingTimeout.current = setTimeout(() => {
+    //     processBarcode(value)
+    //   }, 100)
+    // }
   }, [processBarcode])
 
   // Manejar teclas especiales (Enter, Tab)
