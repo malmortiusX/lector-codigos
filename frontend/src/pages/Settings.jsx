@@ -43,6 +43,7 @@ function Settings() {
     setTesting(true)
     setMessage(null)
 
+    console.log("ingresando a testConnection con:", formData);
     const result = await testConnection(formData)
     
     setTesting(false)
