@@ -26,7 +26,7 @@ export async function testConnection(config) {
     const timeoutId = setTimeout(() => controller.abort(), 10000) // 10 segundos timeout
     console.log(`${API_URL}/api/connect`);
 
-    const response = await fetch(`${API_URL}/lector-codigos/api/connect`, {
+    const response = await fetch(`${API_URL}/api/connect`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
