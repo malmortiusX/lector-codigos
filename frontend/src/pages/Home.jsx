@@ -38,7 +38,7 @@ function Home() {
       const id = await createInventory(newDocNumber.trim())
       setShowNewModal(false)
       setNewDocNumber('')
-      navigate(`/inventory/${id}`)
+      navigate(`/lector-codigos/inventory/${id}`)
     } catch (error) {
       setMessage({ type: 'error', text: 'Error al crear inventario' })
     }
@@ -134,7 +134,7 @@ function Home() {
           {inventories.map(inv => (
             <li key={inv.id} className="list-item">
               <Link 
-                to={`/inventory/${inv.id}`} 
+                to={`/lector-codigos/inventory/${inv.id}`} 
                 className="list-item-content"
                 style={{ textDecoration: 'none', color: 'inherit' }}
               >
