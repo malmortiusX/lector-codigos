@@ -158,7 +158,7 @@ function Settings() {
             onClick={handleTestConnection}
             disabled={testing || !formData.server || !formData.database}
           >
-            {testing ? 'Probando...' : 'Probaar Conexión'}
+            {testing ? 'Probando...' : 'Probar Conexión'}
           </button>
           <button 
             className="btn btn-primary"
